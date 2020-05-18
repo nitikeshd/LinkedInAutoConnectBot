@@ -1,8 +1,8 @@
 # Importing libraries 
 import imaplib, email 
   
-user = 'nitikeshpro@gmail.com'
-password = '*****************' #Get this app password from https://myaccount.google.com/security 
+user = 'YOUR_GMAIL_EMAILID'
+password = 'YOUR_APP_PASSWORD' #Get this app password from https://myaccount.google.com/security 
 imap_url = 'imap.gmail.com'
 class mail:
     def __init__(self):
@@ -33,12 +33,12 @@ class mail:
         con.select('Inbox')  
         msgs = self.get_emails(self.search('FROM', 'security-noreply@linkedin.com', con),con) 
 
-        for sent in msgs[-1]: #this will get the latest email in your gmail
+        for sent in msgs[-1]:
             if type(sent) is tuple:  
                 content = str(sent[1], 'utf-8')  
-                #content=content.split('Please use this verification code to complete your sign in: ')[1]  #this is for getting linkedin passcode
-                #code=content[0]+content[1]+content[2]+content[3]+content[4]+content[5]
-                return content
+                content=content.split('Please use this verification code to complete your sign in: ')[1]
+                code=content[0]+content[1]+content[2]+content[3]+content[4]+content[5]
+                return code
         return 0
         
 #mail().getCode()
