@@ -1,6 +1,7 @@
 # Importing libraries 
 import imaplib, email 
   
+#Put your Gmail Email here. (Replace YOUR_GMAIL_EMAILID with youremailid@gmail.com)
 user = 'YOUR_GMAIL_EMAILID'
 password = 'YOUR_APP_PASSWORD' #Get this app password from https://myaccount.google.com/security 
 imap_url = 'imap.gmail.com'
@@ -42,4 +43,5 @@ class mail:
         return 0
         
 #mail().getCode()
+#No need to run this code from here as it is being used in run.py
 
