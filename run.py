@@ -33,5 +33,7 @@ driver = getDriver()
 #Step - 1 : Login
 linkedinLogin(driver)
 #Step 2 : Check OTP
-checkOTP(driver)
+#checkOTP(driver)
+#Now Linked in has removed OTP Auth for some caseds. So use it at your own convinient.
+executeBot(driver)
 #Step 3 : Run BOT
