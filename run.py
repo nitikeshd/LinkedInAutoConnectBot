@@ -9,10 +9,29 @@ def getDriver():
     return webdriver.Remote(command_executor='http://*************:**************@hub.browserstack.com:80/wd/hub', desired_capabilities=desired_cap)
 def linkedinLogin(driver):
     driver.get('https://www.linkedin.com/login')
-    username = driver.find_element_by_id("username")
-    password = driver.find_element_by_id("password")
-    username.send_keys("****YOUR_USERNAME*****")
-    password.send_keys("****YOUR_PASSWORD*****")
+    username = driver.find_element_by_id("Veda09052")
+    password = driver.find_element_by_id("Veda#123")
+    <span class="tvm__text tvm__text--neutral"><!---->April 2012<!----></span>
+<span aria-hidden="true"><span class="tvm__text tvm__text--neutral"><!---->April 2012<!----></span></span>
+<span class="visually-hidden"><span class="tvm__text tvm__text--neutral"><!---->April 2012<!----></span></span>
+<span class="visually-hidden"><span class="tvm__text tvm__text--neutral"><!---->April 2012<!----></span></span>
+<p class="text-body-small">
+        <span aria-hidden="true"><span class="tvm__text tvm__text--neutral"><!---->April 2012<!----></span></span><span class="visually-hidden"><span class="tvm__text tvm__text--neutral"><!---->April 2012<!----></span></span>
+      </p>
+<li class="mt2 mb1">
+    <div class="display-flex">
+<!---->      <span class="text-body-medium align-items-center">
+        <span aria-hidden="true"><strong><!---->Joined<!----></strong></span><span class="visually-hidden"><strong><!---->Joined<!----></strong></span>
+      </span>
+    </div>
+
+<!---->
+      <p class="text-body-small">
+        <span aria-hidden="true"><span class="tvm__text tvm__text--neutral"><!---->April 2012<!----></span></span><span class="visually-hidden"><span class="tvm__text tvm__text--neutral"><!---->April 2012<!----></span></span>
+      </p>
+  </li>
+    username.send_keys(Veda09052)
+    password.send_keys(Veda#123)
     driver.find_element_by_tag_name("button").click()
     time.sleep(5)
 def checkOTP(driver):
